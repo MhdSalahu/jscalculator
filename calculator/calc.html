@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         body{
-            background-image: linear-gradient(to right,#2893f1, #e62065);
+            background-image: linear-gradient(to right, #78656b,#343c43);
             opacity: 0.4;
         }
         table,td,td{
@@ -22,25 +22,22 @@
         input[type="button"],input[type="text"]{
             width: 100%;
             height: 100%;
-            font-size: larger;
-            border-color: rgb(188, 188, 188);
-            background-color: rgb(236, 216, 238);
+            font-size: 30px;
+            border-color: rgb(9, 9, 9);
+            background-color: rgb(16, 14, 14);
             border-radius: 5px ;
-            
+            color: #ffffff;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            text-decoration: none;
+           
         }
-        .color{
-            color: blue;
-        }
-        .color1{
-            color: rgb(255, 0, 0);
+        input[type="button"]:hover{
+             box-shadow: 0 12px 16px 0 rgba(239, 229, 229, 0.8),0 17px 50px 0 rgba(222, 118, 118, 0.929);
         }
         #equal{
             color: rgb(255, 255, 255);
             background-color: rgb(61, 61, 198);
-        }
-        h1{
-           text-align: center;
-           color: rgb(32, 50, 18);
         }
         .result{
             height: 75px;
@@ -50,15 +47,21 @@
             border :0px;
         }
         #back{
-            height:30px ;
-            width:30px;
+            padding: 20px 20px;
             
             color: rgb(0, 0, 0);
             background-color: #ffffff;
             border:none;
-            border-radius: 5px;
+            border-radius: 7px;
             opacity: 1;
             cursor: pointer;
+            transition-duration: 0.4s;
+            -webkit-transition-duration: 0.4s; /* Safari */
+        }
+        #back:hover{
+            background-color: #000000; /* Green */
+            color: white;
+            box-shadow: 0 12px 16px 0 rgba(74, 78, 184, 0.8),0 17px 50px 0 rgba(225, 199, 199, 0.929);
         }
     </style>
 
@@ -84,7 +87,7 @@
     <br>
         <table cellspacing="0px" align="center">
             <tr>
-                <input disabled style="border: 0px;height:30px;width:30px;opacity: .2;">
+                <input disabled style="border: 0px;height:30px;width:30px;;">
                 <input disabled style="border: 0px;height:30px;width:30px;float:right;opacity: .3;">
                 <td colspan="4"><input type="text" style="width: 292px;" disabled id="result">&nbsp; </td>
                 <td><input disabled style="border: 0px;height:30px;width:30px;opacity: .2;"> </td>
@@ -93,22 +96,22 @@
                 </td>
             </tr>
             <tr >
-                <td><input type="button" value="c" class="color1" onclick="clr()"></td>
-                <td><input type="button" value="/" class="color" onclick="calc('/')"></td>
-                <td><input type="button" value="x" class="color" onclick="calc('*')"></td>
-                <td><input type="button" value="X²" class="color" onclick="calc('**2')"></td>
+                <td><input type="button" value="c" class="color1" onclick="clr()" style="color: rgb(255, 0, 0);"></td>
+                <td><input type="button" value="/" class="color" onclick="calc('/')" style="color: rgb(187, 138, 224);"></td>
+                <td><input type="button" value="x" class="color" onclick="calc('*')" style="color: rgb(187, 138, 224);"</td>
+                <td><input type="button" value="X²" class="color" onclick="calc('**2')" style="color: rgb(187, 138, 224);"></td>
             </tr>
             <tr>
                 <td><input type="button" value="7" onclick="calc('7')"></td>
                 <td><input type="button" value="8" onclick="calc('8')"></td>
                 <td><input type="button" value="9" onclick="calc('9')"></td>
-                <td><input type="button" value="-" class="color" onclick="calc('-')"></td>
+                <td><input type="button" value="-" class="color" onclick="calc('-')" style="color: rgb(187, 138, 224);"></td>
             </tr>
             <tr >
                 <td><input type="button" value="4" onclick="calc('4')"></td>
                 <td><input type="button" value="5" onclick="calc('5')"></td>
                 <td><input type="button" value="6" onclick="calc('6')"></td>
-                <td><input type="button" value="+" class="color" onclick="calc('+')"></td>
+                <td><input type="button" value="+" class="color" onclick="calc('+')" style="color: rgb(187, 138, 224);"></td>
             </tr>
             <tr >
                 <td><input type="button" value="1" onclick="calc('1')"></td>
@@ -125,8 +128,13 @@
     </div>
     <div>
         <input disabled style="border: 0px;height:30px;width:30px;opacity: .2
+        ;"><input disabled style="border: 0px;height:30px;width:30px;opacity: 0
+        ;"><input disabled style="border: 0px;height:30px;width:30px;opacity: .2
         ;">
          <input disabled style="border: 0px;height:30px;width:30px;float:right;opacity: .3;">
-    </div>
+    </div><input disabled style="border: 0px;height:30px;width:30px;opacity: 0;">
+    <input disabled style="border: 0px;height:30px;width:30px;opacity: .2;">
+    <div style="float: right;color:#ffffff"><span>Designed by</span><br>
+                <span style="padding: 20px;color:rgb(253, 223, 162);font-family:cursive">Mhd Salahu</span></div>
 </body>
 </html>
