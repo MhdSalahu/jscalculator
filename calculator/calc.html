@@ -82,7 +82,11 @@
         {
             document.getElementById('result').value=" ";
         }
-        
+        function back()
+        {
+            var value = document.getElementById("result").value;
+            document.getElementById("result").value = value.substr(0, value.length - 1);
+        }
     </script>
 </head>
 <body class="body1">
@@ -98,10 +102,10 @@
                 </td>
             </tr>
             <tr >
-                <td><input type="button" value="c" class="color1" onclick="clr()" style="color: rgb(255, 0, 0);"></td>
+                <td><input type="button" value="C" class="color1" onclick="clr()" style="color: rgb(255, 0, 0);"></td>
+                <td><input type="button" value="DEL" class="color" onclick="back()" style="color: rgb(53, 190, 221);font-size:small;"></td>
+                <td><input type="button" value="X" class="color" onclick="calc('*')" style="color: rgb(187, 138, 224);"</td>
                 <td><input type="button" value="/" class="color" onclick="calc('/')" style="color: rgb(187, 138, 224);"></td>
-                <td><input type="button" value="x" class="color" onclick="calc('*')" style="color: rgb(187, 138, 224);"</td>
-                <td><input type="button" value="X²" class="color" onclick="calc('**2')" style="color: rgb(187, 138, 224);"></td>
             </tr>
             <tr>
                 <td><input type="button" value="7" onclick="calc('7')"></td>
