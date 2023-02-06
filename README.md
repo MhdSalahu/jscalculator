@@ -19,3 +19,6 @@ This is a simple JavaScript calculator that performs basic arithmetic operations
   ## Requirements
   
   * A web browser that supports JavaScript.
+
+
+[try me...](https://mhdsalahu.github.io/jscalculator/calculator/calc.html)
