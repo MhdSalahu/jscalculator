@@ -1,6 +1,6 @@
 # JavaScript Calculator
 
-This is a simple JavaScript calculator that performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
+This is a simple [JavaScript calculator](https://mhdsalahu.github.io/jscalculator/calculator/calc.html) that performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
 ## Features
 
