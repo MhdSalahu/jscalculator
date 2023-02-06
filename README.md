@@ -6,7 +6,8 @@ This is a simple [JavaScript calculator](https://mhdsalahu.github.io/jscalculato
 
 * Perform basic arithmetic operations
 * Display the result in real-time
-* Clear the input fields with a single click
+* Clear the input fields with one click
+* Delete the number one by one with a single click
 
 ## Usage
 
